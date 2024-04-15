@@ -17,7 +17,7 @@ const bootstrap = async () => {
   await server.register(GuardiansController, { prefix: 'guardians' });
 
   server.withTypeProvider<TypeBoxTypeProvider>();
-  server.listen({ port: 9000 }, (err) => console.log('Server listening on port 9000', err ?? ''));
+  server.listen({ port: +(process.env.PORT ?? 9000) }, (err) => console.log('Server listening on port 9000', err ?? ''));
 };
 
 bootstrap();
