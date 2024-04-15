@@ -1,7 +1,7 @@
 import { FastifyReply, FastifyRequest } from 'fastify';
 import jwt from 'jsonwebtoken';
 
-const secret = 'my-secret-de-ouf';
+const secret = 'anepasreproduirechezvous';
 
 export const isAuthenticated = (req: FastifyRequest, rep: FastifyReply, done: () => void) => {
   try {

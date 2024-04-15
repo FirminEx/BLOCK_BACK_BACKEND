@@ -2,7 +2,7 @@ import { ethers } from 'ethers';
 import { FastifyPluginCallback, FastifyRequest } from 'fastify';
 import jwt from 'jsonwebtoken';
 
-const secret = 'my-secret-de-ouf';
+const secret = 'anepasreproduirechezvous';
 
 export const AuthController: FastifyPluginCallback = (fastify, _, done) => {
   fastify.post(
