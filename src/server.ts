@@ -19,7 +19,7 @@ const bootstrap = async () => {
   const port = +(process.env.PORT ?? 9000);
 
   server.withTypeProvider<TypeBoxTypeProvider>();
-  server.listen({ port }, (err) => console.log(`Server is listening on port ${port}`, err ?? ''));
+  server.listen(port, '0.0.0.0', (err) => console.log(`Server is listening on port ${port}`, err ?? ''));
 };
 
 bootstrap();
